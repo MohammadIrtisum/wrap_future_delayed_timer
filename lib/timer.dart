@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+//timer is best option becaues this ues dispose
+
 class timer extends StatefulWidget {
   const timer({super.key});
 
@@ -18,6 +20,12 @@ class _timerState extends State<timer> {
         flag = true;
       });
     });
+  }
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    timer.cancel();
   }
   @override
   void initState() {

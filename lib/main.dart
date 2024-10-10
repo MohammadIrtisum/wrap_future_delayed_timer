@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wrap_future_delayed_timer/async_page.dart';
+import 'package:wrap_future_delayed_timer/logo.dart';
 import 'package:wrap_future_delayed_timer/timer.dart';
 import 'package:wrap_future_delayed_timer/wrap.dart';
 
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
 
       ),
       debugShowCheckedModeBanner: false,
-      home: timer(),
+      home: logo(),
     );
   }
 }
